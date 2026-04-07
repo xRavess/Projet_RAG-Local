@@ -6,9 +6,6 @@
 
 > **Solution d'IA souveraine** conçue pour interroger ses cours (PDF, Markdown) en toute confidentialité, sans qu'aucune donnée ne quitte votre machine.
 
-[comment]: <> (## 📸 Aperçu=
-[comment]: <>(![Interface de l'assistant](https://via.placeholder.com/800x400?text=Capture+d'écran+Streamlit+à+venir))
-[comment]: <>(*L'interface permet de charger des documents PDF et de poser des questions spécifiques sur le contenu.*)
 
 ## 🌟 Points Forts
 - 🔒 **100% Local :** Utilisation d'Ollama (Llama 3/Mistral). Confidentialité totale garantie.
