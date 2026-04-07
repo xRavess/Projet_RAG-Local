@@ -4,12 +4,16 @@
 
 # 📚 Assistant de Révision IA (RAG Local)
 
-> Une solution d'IA souveraine pour interroger ses cours de CY Tech en toute confidentialité.
+> **Solution d'IA souveraine** conçue pour interroger ses cours (PDF, Markdown) en toute confidentialité, sans qu'aucune donnée ne quitte votre machine.
+
+## 📸 Aperçu
+![Interface de l'assistant](https://via.placeholder.com/800x400?text=Capture+d'écran+Streamlit+à+venir)
+*L'interface permet de charger des documents PDF et de poser des questions spécifiques sur le contenu.*
 
 ## 🌟 Points Forts
-- 🔒 **100% Local :** Aucune donnée ne quitte votre machine (RGPD compliant).
-- 🧠 **Conscience du Contexte :** Répond précisément grâce à vos documents PDF.
-- ⚡ **Performance :** Optimisé pour tourner sur un PC portable standard.
+- 🔒 **100% Local :** Utilisation d'Ollama (Llama 3/Mistral). Confidentialité totale garantie.
+- 🧠 **Conscience du Contexte :** Utilise la technique du RAG (Retrieval-Augmented Generation) pour limiter les hallucinations.
+- ⚡ **Performance :** Optimisé pour tourner sur une configuration matériel standard.
 
 ## 🛠️ Architecture
 ```mermaid
@@ -18,5 +22,41 @@ graph LR
   B --> C{Vector Store}
   D[Question] --> E(Retriever)
   E --> C
-  C --> F(Llama 3)
+  C --> F(Llama 3 via Ollama)
   F --> G[Réponse Contextuelle]
+```
+
+## 🗺️ Roadmap / Avancement
+- [x] **Sprint 1 :** Configuration de l'environnement (Ollama, Python venv)
+- [ ] **Sprint 2 :** Ingestion des PDF & Text Splitting (Chunking intelligent)
+- [ ] **Sprint 3 :** Création du Vector Store (ChromaDB)
+- [ ] **Sprint 4 :** Implémentation de la chaîne de Retrieval & Prompt Engineering
+- [ ] **Sprint 5 :** Interface utilisateur Streamlit & Visualisation des sources
+
+## 🚀 Installation & Lancement
+
+### 1. Prérequis
+- [Ollama](https://ollama.com/) installé et fonctionnel.
+- Python 3.10+ installé.
+
+### 2. Configuration
+```bash
+# Cloner le projet
+git clone [https://github.com/xRavess/assistant-rag-local.git](https://github.com/xRavess/assistant-rag-local.git)
+cd assistant-rag-local
+
+# Créer et activer l'environnement virtuel
+python -m venv .venv
+source .venv/bin/activate  # Sur Windows: .venv\Scripts\activate
+
+# Installer les dépendances
+pip install -r requirements.txt
+```
+
+### 3. Lancement
+```bash
+streamlit run app.py
+```
+
+---
+*Projet réalisé dans le cadre d'un cycle ingénieur à CY Tech.*
