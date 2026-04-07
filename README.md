@@ -59,4 +59,4 @@ streamlit run app.py
 ```
 
 ---
-*Projet réalisé dans le cadre d'un cycle ingénieur à CY Tech.*
+*Projet personnel réalisé en parallèle de mon cursus à CY Tech.*
