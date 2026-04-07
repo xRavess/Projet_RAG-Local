@@ -37,7 +37,7 @@ graph LR
 
 ### 1. Prérequis
 - [Ollama](https://ollama.com/) installé et fonctionnel.
-- Python 3.10+ installé.
+- [Python](https://www.python.org/downloads/) 3.10+ installé.
 
 ### 2. Configuration
 ```bash
