@@ -41,18 +41,21 @@ graph LR
 
 ### 2. Configuration
 ```bash
-# Cloner le projet
-git clone [https://github.com/xRavess/assistant-rag-local.git](https://github.com/xRavess/assistant-rag-local.git)
-cd assistant-rag-local
+# 1. Cloner le projet
+git clone [https://github.com/xRavess/Projet_RAG-Local.git](https://github.com/xRavess/Projet_RAG-Local.git)
+cd Projet_RAG-Local
 
-# Créer et activer l'environnement virtuel
+# 2. Créer l'environnement virtuel
 python -m venv .venv
-source .venv/bin/activate  # Sur Windows: .venv\Scripts\activate
 
-# Installer les dépendances
+# 3. Activer l'environnement
+# Sur Windows :
+.venv\Scripts\activate
+# Sur Mac/Linux :
+source .venv/bin/activate
+
+# 4. Installer les dépendances
 pip install -r requirements.txt
-```
-
 ### 3. Lancement
 ```bash
 streamlit run app.py
