@@ -25,7 +25,7 @@ graph LR
 
 ## 🗺️ Roadmap / Avancement
 - [x] **Sprint 1 :** Configuration de l'environnement (Ollama, Python venv)
-- [ ] **Sprint 2 :** Ingestion des PDF & Text Splitting (Chunking intelligent)
+- [x] **Sprint 2 :** Ingestion des PDF & Text Splitting (Chunking intelligent)
 - [ ] **Sprint 3 :** Création du Vector Store (ChromaDB)
 - [ ] **Sprint 4 :** Implémentation de la chaîne de Retrieval & Prompt Engineering
 - [ ] **Sprint 5 :** Interface utilisateur Streamlit & Visualisation des sources
